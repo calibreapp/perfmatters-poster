@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development node dev-server.js",
     "build": "NODE_ENV=production webpack --progress --colors --bail --optimize-minimize --optimize-dedupe",
     "deploy": "aws s3 sync public/ s3://perfmatters.calibreapp.com --acl public-read",
-    "assets": "cp -r src/assets public/assets",
+    "assets": "cp -r src/assets public/",
     "invalidate-edge-cache": "aws cloudfront create-invalidation --paths / /index.html --distribution-id $CF_DISTRIBUTION"
   },
   "dependencies": {
