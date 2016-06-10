@@ -31,7 +31,6 @@ input {
 .btn,
 button {
   display: inline-block;
-  color: white;
   cursor: pointer;
   transition: all .25s;
   text-align: center;
