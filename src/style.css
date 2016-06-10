@@ -28,8 +28,7 @@ input {
   -webkit-appearance: none;
 }
 
-.btn,
-button {
+.btn {
   display: inline-block;
   cursor: pointer;
   transition: all .25s;
@@ -37,10 +36,18 @@ button {
   text-decoration: none;
 }
 
-.btn:hover,
-button:hover {
-  color: rgba(255, 255, 255, .8);
+.btn--light {
+  color: rgba(78, 185, 110, 1);
+  border: 2px solid rgba(78, 185, 110, 1);
 }
+
+.btn--dark {
+  color: white;
+  background-color: rgba(78, 185, 110, 1);
+}
+
+.btn--light:hover { color: rgba(78, 185, 110, .5); }
+.btn--dark:hover { color: rgba(255, 255, 255, .8); }
 
 .avatar {
   background-size: cover;
