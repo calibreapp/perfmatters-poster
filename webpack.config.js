@@ -44,12 +44,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel-loader'],
-      },
-      {
-        test: /\.svg$/,
-        loaders: [
-          'svg-sprite'
-        ]
       }
     ]
   },
